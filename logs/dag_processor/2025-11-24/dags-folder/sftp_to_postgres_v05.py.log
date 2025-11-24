@@ -1,0 +1,6 @@
+{"timestamp":"2025-11-24T19:25:56.354123","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v05.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-11-24T19:26:27.647238","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v05.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-11-24T19:26:58.643620","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v05.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-11-24T19:27:29.509661","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v05.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-11-24T19:28:00.395147","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v05.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-11-24T19:28:31.297408","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v05.py","logger":"airflow.models.dagbag.DagBag"}
