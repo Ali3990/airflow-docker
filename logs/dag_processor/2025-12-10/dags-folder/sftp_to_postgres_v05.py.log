@@ -552,3 +552,4 @@
 {"timestamp":"2025-12-10T23:49:37.753254","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v05.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-12-10T23:50:09.416778","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v05.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-12-10T23:50:41.210128","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v05.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-12-10T23:51:14.400213","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sftp_to_postgres_v05.py","logger":"airflow.models.dagbag.DagBag"}
