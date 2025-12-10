@@ -21,8 +21,22 @@ from io import StringIO
     tags=["sftp", "postgres", "taskflow"],
 )
 
-
 def sftp_corelogic():
-    @task()
+
     # Check and print latest table in the SFTP transfer
+    @task()
+    def list_files():
+        hook = SFTPHook(ftp_conn_id="sftp_conn")
+        files = hook.get_conn().listdir(".")
+        print("Files in SFTP root directory:", files)
+        for f in files:
+            print(" -", f)
+        return files
+
+    list_files()
+
+
+sftp_corelogic()
+
+    
     
