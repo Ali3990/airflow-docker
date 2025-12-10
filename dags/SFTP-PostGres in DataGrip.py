@@ -13,15 +13,14 @@ from io import StringIO
     default_args={
         "owner": "airflow",
         "retries": 0,
-        "backfill": False
+        "catchup": False
     },
     schedule=None,
     start_date=datetime(2025, 1, 1),
     catchup=False,
     tags=["sftp", "postgres", "taskflow"],
 )
-
-def sftp_corelogic():
+def sftp_corelogic_v2():
 
     # Check and print latest table in the SFTP transfer
     @task()
@@ -33,10 +32,18 @@ def sftp_corelogic():
             print(" -", f)
         return files
 
-    list_files()
+    @task()
+    def download_latest_files():
+        
 
 
-sftp_corelogic()
+
+
+
+    list = list_files()
+    download_latest = download_latest_files(list)
+
+sftp_corelogic_v2() 
 
     
     
