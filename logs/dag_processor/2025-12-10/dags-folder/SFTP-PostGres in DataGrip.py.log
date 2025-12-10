@@ -786,3 +786,7 @@
 {"timestamp":"2025-12-10T23:50:29.658223","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/SFTP-PostGres in DataGrip.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-12-10T23:51:01.255896","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/SFTP-PostGres in DataGrip.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-12-10T23:51:32.957829","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/SFTP-PostGres in DataGrip.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-12-10T23:52:03.868819","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/SFTP-PostGres in DataGrip.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-12-10T23:52:34.727414","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/SFTP-PostGres in DataGrip.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-12-10T23:53:05.579667","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/SFTP-PostGres in DataGrip.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-12-10T23:53:36.970597","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/SFTP-PostGres in DataGrip.py","logger":"airflow.models.dagbag.DagBag"}
