@@ -1,6 +1,6 @@
 In order to make a connection with Airflow within Docker:
 
-1. Create the Postgres database within DBeaver -> Create connection, and add the following settings:
+Basic connection inputs:
     - Connect by: Host
     - Host: localHost (the name doesn't matter)
     - Port: 5433 (must use a different port instead of 5432:5432 because this is mapped to another local database. Using 5433:5432, the PostgreSQL is listening on 5432, but
@@ -9,7 +9,7 @@ In order to make a connection with Airflow within Docker:
     - Username/Password: airflow (or whatever it is set within the docker-compose.yml file)
 
 
-2. Edit the yaml file, go to the "services:" block, and add port: 5433:5432 like so:
+1. Edit the yaml file, go to the "services:" block, and add port: 5433:5432 like so:
 
             postgres:
                 image: postgres:13
@@ -30,14 +30,25 @@ In order to make a connection with Airflow within Docker:
 
 	[Note: The ports 5433 is the port to our PC, 5432 is the port in which is where airflow is running inside the container]
 
-3. Set up the requirements.txt file that will later be ran by the dockerfile. It will install all the dependencies for that image.
+2. Set up the requirements.txt file that will later be ran by the dockerfile. It will install all the dependencies for that image.
 
-4. After spinning up airflow, within the airflow GUI, go to 'admin' > 'connections', add new connection details:
+3. After spinning up airflow, within the airflow GUI, go to 'admin' > 'connections', add new connection details:
     - Create a connection name
     - Connection Type: Postgres
-    - Host: host.docker.internal (do not use localhost since airflow is running via docker)
+    - Host: host.docker.internal 
     - desciption: (optional)
     - Port: 5433 (note: this is telling airflow in docker, which is in port 5432, to listen to port 5433, which is where the database is held on our local PC)
     - Login/Password: airflow (or whatever you have set in the yml file)
-    - Database: CoreLogic (or leave blank. If blank, it will create a database within the connection in DBeaver using the login name, but defining it will tell it to
+    - Database: corelogic (or leave blank. If blank, it will create a database within the connection in DBeaver using the login name, but defining it will tell it to
                             send data to that specific database with that name.)
+
+4. Create another connection for connect to SFTP or any other data source:
+
+Credentials:
+    - Connection ID: sftp_conn
+    - connection type: SFTP
+    - Host: ftp2.resftp.com
+    - description: (optional)
+    - Port: 22
+    - Login/Password: Marcus&Millichap / 9wpx9Cb2
+    -
